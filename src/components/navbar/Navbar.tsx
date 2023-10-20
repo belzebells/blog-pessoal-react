@@ -9,7 +9,7 @@ function Navbar() {
 
   function logout() {
       handleLogout()
-      alert('Usuário deslogado com sucesso')
+      alert('usuário deslogado com sucesso')
       navigate('/login')
   }
 
@@ -17,17 +17,17 @@ function Navbar() {
   
   return (
     <>
-     <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
-          <div className="container flex justify-between text-lg">
-          <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
+     <div className='w-full bg-teal-600 text-white flex center py-5'>
+          <div className="container text-lg">
+          <Link to='/home' className='text-2xl font-bold lowercase flex start'>.  blog pessoal</Link>
 
-            <div className='flex gap-4'>
+            <div className='flex gap-3' >
               
-            <div className='hover:underline'>Postagens</div>
-            <Link to='/temas' className='hover:underline'>Temas</Link>
-            <Link to='/cadastroTema' className='hover:underline'>Cadastrar tema</Link>
-              <div className='hover:underline'>Perfil</div>
-              <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
+            <div className='hover:underline'>| postagens | </div>
+            <Link to='/temas' className='hover:underline'>temas | </Link>
+            <Link to='/cadastroTema' className='hover:underline'>cadastrar tema | </Link>
+              <div className='hover:underline'>perfil | </div>
+              <Link to='' onClick={logout} className='hover:underline'>sair </Link>
              
             </div>
           </div>

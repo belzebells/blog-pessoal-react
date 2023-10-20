@@ -55,14 +55,14 @@ function Cadastro() {
 
       try {
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuarioResposta)
-        alert('Usuário cadastrado com sucesso')
+        alert('usuário cadastrado com sucesso')
 
       } catch (error) {
-        alert('Erro ao cadastrar o Usuário')
+        alert('rrro ao cadastrar o Usuário')
       }
 
     } else {
-      alert('Dados inconsistentes. Verifique as informações de cadastro.')
+      alert('dados inconsistentes. verifique as informações de cadastro.')
       setUsuario({ ...usuario, senha: "" }) // Reinicia o campo de Senha
       setConfirmaSenha("")                  // Reinicia o campo de Confirmar Senha
     }
@@ -73,9 +73,9 @@ function Cadastro() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-slate-900 text-5xl'>Cadastrar</h2>
+          <h2 className='text-slate-900 text-5xl'>cadastrar</h2>
           <div className="flex flex-col w-full">
-            <label htmlFor="nome">Nome</label>
+            <label htmlFor="nome">nome</label>
             <input
               type="text"
               id="nome"
@@ -87,7 +87,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="usuario">Usuario</label>
+            <label htmlFor="usuario">usuário</label>
             <input
               type="text"
               id="usuario"
@@ -99,7 +99,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="foto">Foto</label>
+            <label htmlFor="foto">foto</label>
             <input
               type="text"
               id="foto"
@@ -111,7 +111,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="senha">Senha</label>
+            <label htmlFor="senha">senha</label>
             <input
               type="password"
               id="senha"
@@ -123,7 +123,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="confirmarSenha">Confirmar Senha</label>
+            <label htmlFor="confirmarSenha">confirmar senha</label>
             <input
               type="password"
               id="confirmarSenha"
@@ -136,10 +136,10 @@ function Cadastro() {
           </div>
           <div className="flex justify-around w-full gap-8">
             <button className='rounded text-white bg-red-400 hover:bg-red-700 w-1/2 py-2' onClick={back}>
-              Cancelar
+              cancelar
             </button>
             <button className='rounded text-white bg-indigo-400 hover:bg-indigo-900 w-1/2 py-2' type='submit'>
-              Cadastrar
+              cadastrar
             </button>
           </div>
         </form>
