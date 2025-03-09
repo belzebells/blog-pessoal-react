@@ -28,45 +28,42 @@ This project is divided into three main repositories:
 3. **Database Schema**: [MySQL-DER-blog-pessoal](https://github.com/belzebells/MySQL-DER-blog-pessoal)  
 
 ## **Setup Instructions**
+
 1. **Clone the Front-end Repository**:
    ```bash
    git clone https://github.com/belzebells/blog-pessoal-react.git
    cd blog-pessoal-react
    
-2. Install Dependencies:
+2. **Install Dependencies**:
+   
    ```bash
    npm install
-   ```
 
-3. Start the Front-end:
+3. **Start the Front-end**:
+   
    ```bash
-   npm start
-   ```
-The front-end will start at http://localhost:3000.
+   npm start 
+ - The front-end will start at http://localhost:3000.
 
-4. Set Up the Back-end:
-Clone the back-end repository:
-
-bash
+4. **Set Up the Back-end**:
+   
+- Clone the back-end repository:
    ```bash
    git clone https://github.com/belzebells/blogpessoal.git
    cd blogpessoal
-```
-Set up the MySQL database and update the application.properties file with your database credentials.
+- Set up the MySQL database and update the application.properties file with your database credentials.
+- Run the back-end:
+   ```bash 
+   ./mvnw spring-boot:run
+- The back-end will start at http://localhost:8080.
 
-Run the back-end:
-   ```bash
-./mvnw spring-boot:run
-```
-The back-end will start at http://localhost:8080.
-
-5. Set Up the Database:
-Clone the database repository:
+5. **Set Up the Database**:
+   
+- Clone the database repository:
    ```bash
    git clone https://github.com/belzebells/MySQL-DER-blog-pessoal.git
    cd MySQL-DER-blog-pessoal
-   ```
-   Import the SQL file into your MySQL database.
+- Import the SQL file into your MySQL database.
 
 
 
