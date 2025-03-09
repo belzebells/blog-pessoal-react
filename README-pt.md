@@ -2,31 +2,77 @@
 
 # Link do deploy: https://blog-pessoal-react-vert.vercel.app/
 
+# **Blog Pessoal**
 
-# React + TypeScript + Vite
+Um aplicativo de blog full-stack desenvolvido durante o Bootcamp de Desenvolvedor Java Full Stack da Generation Brasil. Este projeto permite que os usuários criem, leiam, atualizem e excluam postagens de blog, gerenciem temas e se autentiquem via tokens JWT.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Funcionalidades**
+- **Autenticação de Usuário**: Login e registro seguros usando tokens JWT.
+- **Operações CRUD**: Criar, ler, atualizar e excluir postagens de blog.
+- **Gerenciamento de Temas**: Adicionar, editar e excluir temas para postagens de blog.
+- **Design Responsivo**: Funciona perfeitamente em dispositivos desktop e móveis.
 
-Currently, two official plugins are available:
+## **Tecnologias Utilizadas**
+- **Front-end**: HTML, CSS, JavaScript, React.js
+- **Back-end**: Java 17, Spring Boot, Spring Data JPA, Spring Security
+- **Banco de Dados**: MySQL
+- **Autenticação**: JWT (JSON Web Tokens)
+- **Documentação da API**: Swagger
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Demonstração Online**
+- **Front-end Deployment**: [Blog Pessoal](https://blog-pessoal-react-vert.vercel.app/)
+- **Documentação Swagger**: Disponível localmente em `http://localhost:8080/swagger-ui.html` (veja o GitHub para instruções de configuração).
 
-## Expanding the ESLint configuration
+## **Estrutura do Projeto**
+Este projeto está dividido em três repositórios principais:
+1. **Front-end**: [blog-pessoal-react](https://github.com/belzebells/blog-pessoal-react)  
+2. **Back-end**: [blogpessoal](https://github.com/belzebells/blogpessoal)  
+3. **Esquema do Banco de Dados**: [MySQL-DER-blog-pessoal](https://github.com/belzebells/MySQL-DER-blog-pessoal)  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## **Instruções de Configuração**
+1. **Clone o Repositório do Front-end**:
+   ```bash
+   git clone https://github.com/belzebells/blog-pessoal-react.git
+   cd blog-pessoal-react
 
-- Configure the top-level `parserOptions` property like this:
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   
+3. **Inicie o Front-end**:
+   ```bash
+   npm start
+   ```
+   O front-end será iniciado em http://localhost:3000.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+4. **Configure o Back-end**:
+  - Clone o repositório do back-end:
+     ```bash
+     git clone https://github.com/belzebells/blogpessoal.git
+     cd blogpessoal
+   - Configure o banco de dados MySQL e atualize o arquivo application.properties com suas credenciais.
+     
+   - Execute o back-end:
+     ```bash
+     ./mvnw spring-boot:run
+     ```
+     O back-end será iniciado em http://localhost:8080.
+     
+5. **Configure o banco de dados***:
+   - Clone o repositório do banco de dados:
+     ```bash
+     git clone https://github.com/belzebells/MySQL-DER-blog-pessoal.git
+     cd MySQL-DER-blog-pessoal
+   - Importe o arquivo SQL para o seu banco de dados MySQL.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+   
+
+
+
+
+
+   
+
+   
