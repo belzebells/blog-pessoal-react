@@ -58,11 +58,13 @@ Este projeto está dividido em três repositórios principais:
      ```
      O back-end será iniciado em http://localhost:8080.
      
-5. **Configure o banco de dados***:
+5. **Configure o banco de dados**:
+
    - Clone o repositório do banco de dados:
      ```bash
      git clone https://github.com/belzebells/MySQL-DER-blog-pessoal.git
      cd MySQL-DER-blog-pessoal
+     ```
    - Importe o arquivo SQL para o seu banco de dados MySQL.
 
 
