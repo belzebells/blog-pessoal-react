@@ -45,27 +45,10 @@ npm start
 The front-end will start at http://localhost:3000.
 
 4. Set Up the Back-end:
-Clone the back-end repository:
-```
-git clone https://github.com/belzebells/blogpessoal.git
-cd blogpessoal
-```
-Set up the MySQL database and update the application.properties file with your database credentials.
-
-Run the back-end:
-```
-./mvnw spring-boot:run
-```
-The back-end will start at http://localhost:8080.
+Follow the instructions in the [back-end repository](url) to set up and run the API.
 
 5. Set Up the Database:
-Clone the database repository:
-```
-git clone https://github.com/belzebells/MySQL-DER-blog-pessoal.git
-cd MySQL-DER-blog-pessoal```
-```
-Import the SQL file into your MySQL database.
-```
+Follow the instructions in the [database repository](url) to configure the MySQL database.
 
 
 
