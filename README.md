@@ -48,7 +48,8 @@ This project is divided into three main repositories:
 4. **Set Up the Back-end**:
    
 - Clone the back-end repository:
-   ```bash
+   
+  ```bash
    git clone https://github.com/belzebells/blogpessoal.git
    cd blogpessoal
 - Set up the MySQL database and update the application.properties file with your database credentials.
@@ -66,7 +67,7 @@ This project is divided into three main repositories:
 - Import the SQL file into your MySQL database.
 
 
-
+- **Swagger Documentation**: Available locally at `http://localhost:8080/swagger-ui.html` (see GitHub for setup instructions).
 
 
 
