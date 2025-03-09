@@ -1,3 +1,5 @@
+**Português** | [English](README.md)
+
 # Link do deploy: https://blog-pessoal-react-vert.vercel.app/
 
 
